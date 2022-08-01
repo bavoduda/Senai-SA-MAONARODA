@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Compra de veículos.</title>
+</head>
+
+
+<body background="imagens/13.webp" link="White" alink="White" vlink="White">
+
+  <font color="White">
+
+    <hr size="10" color="Green">
+    
+    <h1 align="center"> Compre já seu veículo! </h1>
+
+    <hr size="5" color="Green">
+
+    <p> Conheça os veículos! <a href="#Compra"> Clique aqui para comprar um veículo. </a> <a href="index.html" align="right"> Clique aqui para conhecer a empresa. </a> <a href="pag2.html" align="right"> Clique aqui para ir a lista de veículos disponíveis. </a> </p>
+
+    <hr size="3" color="Green">
+
+    <table border="0" align="center" width="500" background="imagens/fundo br.jpg">
+        <form action="enviar.php" method="post" name="Cadastro">
+        <tr><td>
+
+         <fieldset>
+            <legend> Informações contratuais: </legend>
+         
+
+         <table border="0" cellpadding="5">
+
+            <tr>
+                <td> <label> Nome: </label> </td>
+                <td> <input type="text" id="nome" name="nome" size="50" placeholder="Informe seu nome:" required> </td>
+            </tr>
+
+            <tr>
+                <td> <label> Email: </label> </td>
+                <td> <input type="email" id="mail" name="mail" size="50" placeholder="Informe o seu email:" required/> </td>
+            </tr>
+
+            <tr>
+                <td> <label> Telefone: </label> </td>
+                <td> <input type="tel" id="telefone" name="telefone" size="50" placeholder="(XX)XXXXX-XXXX:" required/> </td> 
+             </tr>
+
+             <tr>
+                <td> <label> Data de Nascimento: </label> </td>
+                <td> <input type="date" name="data_nasc" id="data_nasc" max="2004-08-01" required/> </td>
+             </tr>
+
+             <tr>
+                <td> <label> CPF: </label> </td>
+                <td> <input type="text" id="cpf" name="cpf" size="50" placeholder="XXX.XXX.XXX-XX" required> </td>
+            </tr>
+
+            <tr>
+                <td> <label> RG: </label> </td>
+                <td> <input type="text" id="rg" name="rg" size="50" placeholder="XX.XXX.XXX-XX" required> </td>
+            </tr>
+
+            <tr>
+                <td> <label> CNH: </label> </td>
+                <td> <input type="text" id="cnh" name="cnh" size="50" placeholder="XXXXXXXXXXX" required> </td>
+            </tr>
+
+            <tr>
+                <td> <label> Anexe uma foto da CNH: </label> </td>
+                <td> <input type="file" id="anexar" name="anexar" required/> </td>
+             </tr>
+
+            <tr>
+                <td> <label> Estado: </label> </td>       
+                    <td> <select id="estado" name="estado" required>
+                        <option value="" selected="selected" align="center">Selecione</option>
+                        <optgroup label="Norte">
+                            <option value="AC">Acre</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="PA">Pará</option>
+                            <option value="TO">Tocantins</option>
+    
+                        </optgroup>
+    
+                        <optgroup label="Nordeste">
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            
+    
+    
+                        </optgroup>
+    
+                        <optgroup label="Sudeste">
+                            <option value="MG">Minas Gerais</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="ES">Espírito Santo</option>
+    
+    
+                        </optgroup>
+    
+                        <optgroup label="Centro-Oeste">
+                            <option value="GO">Goiás</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+    
+                        
+                        </optgroup>
+    
+                        <optgroup label="Sul">
+                            <option value="SC">Santa Catarina</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="PR">Paraná</option>
+                        </optgroup>
+
+                        <option value="EX">Estrangeiro</option>
+                     </select>
+                    </td>
+
+                    <tr>
+                        <td> <label> Informe o tipo do contrato: </label> </td>       
+                            <td> <select id="tipo" name="tipo" required>
+                                <option value="" selected="selected" align="center">Selecione</option>
+                            
+                                    <option value="Aluguel">Aluguel</option>
+                                    <option value="Compra">Compra</option>
+                                    </select>
+                            </td>
+                         </tr>
+
+
+                         <tr>
+                            <td> <label> Informe o veículo desejado: </label> </td>       
+                                <td> <select id="carro" name="carro" required>
+                                    <option value="" selected="selected" align="center">Selecione</option>
+                                
+                                        <option value="Cruze">Chevrolet Cruze LTZ SPORT6</option>
+                                        <option value="Fusion">Ford Fusion TITANIUM FWD</option>
+                                        <option value="T-Cross">Volkswagen T-Cross 200 TSI TOTAL SENSE</option>
+                                        <option value="Creta">Hyundai Creta PULSE PLUS</option>
+                                        <option value="Bmw 320i">Bmw 320i SPORT GP TURBO ACTIVE</option>
+                                        <option value="Hilux">Toyota HILUX SW4 SRV 7L</option>
+                                        <option value="FERRARI 812 GTS">FERRARI 812 GTS</option>
+                                        <option value="FERRARI F430">FERRARI F430</option>
+                                        <option value="R8">Audi R8 4.2 V8 426cv Quattro R-tronic</option>
+                                        <option value="A4">Audi A4 1.8 Aut</option>
+                                        </select>
+                                </td>
+                             </tr>
+    
+
+                    <tr>
+                        <td> <label> Informe a cor do carro: </label> </td>
+                        <td> <input type="text" id="cor" name="cor" size="50" placeholder="Informe a cor:"> </td>
+                    </tr>
+
+                    <tr>
+                        <td> <label> Complemento: </label> </td>
+                        <td> <textarea id="assunto" name="assunto" cols="50" rows="10" maxlength="240" placeholder="Espaço para complementar algo se desejar.(máximo de 240 caracteres)"></textarea>
+                        </td>
+                     </tr>
+
+                     <tr> 
+                        <td align="left"><input type="submit" id="enviar" name="enviar" value="ENVIAR"/></td>
+                        <td align="right"><input type="reset" id="limpar" name="limpar" value="LIMPAR"/></td>
+                  </tr>
+        
+        </table>
+        </fieldset> 
+
+        
+      </form>  
+    </table>
+
+
+    <hr size="5" color="Green">
+
+    <table width="1570">
+
+        <tr>
+
+            <td align="left">
+
+                <figure>
+                    <img src="imagens/12.png" alt="Horário de funcionamento" width="350" height="350">
+                    <figcaption> Imagem criada no Canvas - Horário de funcionamento </figcaption>
+                </figure>
+            </td>
+
+
+            <td align="right">
+                <strong> <p> O nosso horário de funcionamento é segunda a sexta das 8h as 18h e finais de semana e feriados das 9h as 13h, como você pode conferir na imagem ao lado. </p>
+                         <p> As informações para antedimento estão no rodapé da página. </p>
+                         <p> Recomendamos que você verifique os veículos disponíveis e suas informações antes de preencher o formulário. </p>
+                </strong>
+
+
+            </td>
+
+
+
+        </tr>
+
+
+
+
+    </table>
+
+    
+    </font>
+
+</body>
+
+<hr size="10" color="Green">
+
+<footer>  <a href="#TOPO"> Clique aqui para voltar ao início </a> <a href="index.html"> Clique aqui para conhecer a empresa. </a>  <a href="pag2.html"> Clique aqui para ver a lista de carros. </a> </footer>
+</html>
